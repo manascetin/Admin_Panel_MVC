@@ -1,0 +1,321 @@
+CRITICAL - 2024-05-11 13:18:53 --> Error: Class "Codeigniter\Model" not found
+[Method: POST, Route: Auth/check]
+in APPPATH\Models\UsersModel.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\admin_panel\\app\\Models\\UsersModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsersModel')
+ 4 APPPATH\Controllers\Auth.php(55): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsersModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 13:19:03 --> Error: Class "Codeigniter\Model" not found
+[Method: POST, Route: Auth/check]
+in APPPATH\Models\UsersModel.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\admin_panel\\app\\Models\\UsersModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsersModel')
+ 4 APPPATH\Controllers\Auth.php(55): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsersModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 13:35:20 --> Error: Class "Codeigniter\Model" not found
+[Method: POST, Route: Auth/check]
+in APPPATH\Models\UsersModel.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\admin_panel\\app\\Models\\UsersModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsersModel')
+ 4 APPPATH\Controllers\Auth.php(57): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsersModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-11 19:19:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\admin_panel\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\wamp64\www\admin_panel\system\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\admin_panel\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@g...', 'email', Array, NULL, 'email')
+#6 C:\wamp64\www\admin_panel\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@g...', Array, Array, 'email')
+#7 C:\wamp64\www\admin_panel\system\Controller.php(137): CodeIgniter\Validation\Validation->run()
+#8 C:\wamp64\www\admin_panel\app\Controllers\Auth.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\wamp64\www\admin_panel\system\CodeIgniter.php(933): App\Controllers\Auth->check()
+#10 C:\wamp64\www\admin_panel\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\wamp64\www\admin_panel\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\admin_panel\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\admin_panel\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\wamp64\www\admin_panel\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\admin_panel\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\wamp64\www\admin_panel\system\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\admin_panel\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@g...', 'email', Array, NULL, 'email')
+#5 C:\wamp64\www\admin_panel\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@g...', Array, Array, 'email')
+#6 C:\wamp64\www\admin_panel\system\Controller.php(137): CodeIgniter\Validation\Validation->run()
+#7 C:\wamp64\www\admin_panel\app\Controllers\Auth.php(23): CodeIgniter\Controller->validate(Array)
+#8 C:\wamp64\www\admin_panel\system\CodeIgniter.php(933): App\Controllers\Auth->check()
+#9 C:\wamp64\www\admin_panel\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\wamp64\www\admin_panel\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\admin_panel\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\wamp64\www\admin_panel\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\wamp64\www\admin_panel\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-05-11 19:19:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: Auth/check]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@gmail.com', [...], [...], 'email')
+ 6 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(23): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-11 19:21:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\admin_panel\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\wamp64\www\admin_panel\system\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\admin_panel\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@g...', 'email', Array, NULL, 'email')
+#6 C:\wamp64\www\admin_panel\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@g...', Array, Array, 'email')
+#7 C:\wamp64\www\admin_panel\system\Controller.php(137): CodeIgniter\Validation\Validation->run()
+#8 C:\wamp64\www\admin_panel\app\Controllers\Auth.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\wamp64\www\admin_panel\system\CodeIgniter.php(933): App\Controllers\Auth->check()
+#10 C:\wamp64\www\admin_panel\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\wamp64\www\admin_panel\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\admin_panel\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\admin_panel\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\wamp64\www\admin_panel\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\admin_panel\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\wamp64\www\admin_panel\system\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\admin_panel\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@g...', 'email', Array, NULL, 'email')
+#5 C:\wamp64\www\admin_panel\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@g...', Array, Array, 'email')
+#6 C:\wamp64\www\admin_panel\system\Controller.php(137): CodeIgniter\Validation\Validation->run()
+#7 C:\wamp64\www\admin_panel\app\Controllers\Auth.php(23): CodeIgniter\Controller->validate(Array)
+#8 C:\wamp64\www\admin_panel\system\CodeIgniter.php(933): App\Controllers\Auth->check()
+#9 C:\wamp64\www\admin_panel\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\wamp64\www\admin_panel\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\admin_panel\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\wamp64\www\admin_panel\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\wamp64\www\admin_panel\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-05-11 19:21:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: Auth/check]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@gmail.com', [...], [...], 'email')
+ 6 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(23): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-11 19:21:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\admin_panel\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\wamp64\www\admin_panel\system\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\admin_panel\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@g...', 'email', Array, NULL, 'email')
+#6 C:\wamp64\www\admin_panel\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@g...', Array, Array, 'email')
+#7 C:\wamp64\www\admin_panel\system\Controller.php(137): CodeIgniter\Validation\Validation->run()
+#8 C:\wamp64\www\admin_panel\app\Controllers\Auth.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\wamp64\www\admin_panel\system\CodeIgniter.php(933): App\Controllers\Auth->check()
+#10 C:\wamp64\www\admin_panel\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\wamp64\www\admin_panel\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\admin_panel\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\admin_panel\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\wamp64\www\admin_panel\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\admin_panel\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\wamp64\www\admin_panel\system\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\admin_panel\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@g...', 'email', Array, NULL, 'email')
+#5 C:\wamp64\www\admin_panel\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@g...', Array, Array, 'email')
+#6 C:\wamp64\www\admin_panel\system\Controller.php(137): CodeIgniter\Validation\Validation->run()
+#7 C:\wamp64\www\admin_panel\app\Controllers\Auth.php(23): CodeIgniter\Controller->validate(Array)
+#8 C:\wamp64\www\admin_panel\system\CodeIgniter.php(933): App\Controllers\Auth->check()
+#9 C:\wamp64\www\admin_panel\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\wamp64\www\admin_panel\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\admin_panel\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\wamp64\www\admin_panel\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\wamp64\www\admin_panel\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-05-11 19:21:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: Auth/check]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@gmail.com', [...], [...], 'email')
+ 6 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(23): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-05-11 19:31:47 --> mysqli_sql_exception: No database selected in C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\wamp64\www\admin_panel\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\wamp64\www\admin_panel\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\wamp64\www\admin_panel\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\wamp64\www\admin_panel\system\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\admin_panel\system\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@g...', 'email', Array, NULL, 'email')
+#6 C:\wamp64\www\admin_panel\system\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@g...', Array, Array, 'email')
+#7 C:\wamp64\www\admin_panel\system\Controller.php(137): CodeIgniter\Validation\Validation->run()
+#8 C:\wamp64\www\admin_panel\app\Controllers\Auth.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\wamp64\www\admin_panel\system\CodeIgniter.php(933): App\Controllers\Auth->check()
+#10 C:\wamp64\www\admin_panel\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\wamp64\www\admin_panel\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\admin_panel\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\wamp64\www\admin_panel\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\wamp64\www\admin_panel\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-05-11 19:31:47 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+[Method: POST, Route: Auth/check]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@gmail.com', 'email', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@gmail.com', [...], [...], 'email')
+ 5 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\Auth.php(23): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 19:31:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'manascetin232@gmail.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'manascetin232@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@gmail.com', 'email', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@gmail.com', [...], [...], 'email')
+ 7 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\Auth.php(23): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 19:31:47 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'manascetin232@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'manascetin232@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'manascetin232@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('manascetin232@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(201): CodeIgniter\Validation\Validation->processRules('email', 'email', 'manascetin232@gmail.com', [...], [...], 'email')
+ 8 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Auth.php(23): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 19:31:58 --> Error: Class "Codeigniter\Model" not found
+[Method: POST, Route: Auth/check]
+in APPPATH\Models\UsersModel.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\admin_panel\\app\\Models\\UsersModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsersModel')
+ 4 APPPATH\Controllers\Auth.php(57): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsersModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 19:36:36 --> TypeError: CodeIgniter\Database\BaseBuilder::where(): Argument #3 ($escape) must be of type ?bool, string given, called in C:\wamp64\www\admin_panel\system\Model.php on line 919
+[Method: POST, Route: Auth/check]
+in SYSTEMPATH\Database\BaseBuilder.php on line 699.
+ 1 SYSTEMPATH\Model.php(919): CodeIgniter\Database\BaseBuilder->where('email', '=', '')
+ 2 APPPATH\Controllers\Auth.php(60): CodeIgniter\Model->__call('where', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->check()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
